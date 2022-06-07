@@ -32,7 +32,7 @@ i18n
     react: {
       useSuspense: false
     },
-    fallbackLng: "vi",
+    fallbackLng: "zh_HK",
     debug: false,
     keySeparator: false,
     interpolation: {

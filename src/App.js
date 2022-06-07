@@ -180,7 +180,7 @@ const App = (props) => {
           <BrowserRouter getUserConfirmation={handleUserConfirm}>
             <Switch>
               <Route exact path="/">
-                <Redirect to="/so" />
+                <Redirect to="/products" />
               </Route>
               {routes.map((route, key) => {
                 const paths =

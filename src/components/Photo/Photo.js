@@ -33,7 +33,7 @@ const loadImage = (src) => {
 }
 
 const Photo = ({ src, ...otherParams }) => {
-  const [url,setUrl] = React.useState('');
+  const [url,setUrl] = React.useState(undefined);
   const [loadingImg,setLoadingImg] = React.useState(true);
   const [imageStyles] = React.useState({
     objectFit: "contain",
@@ -42,7 +42,6 @@ const Photo = ({ src, ...otherParams }) => {
 
   React.useEffect(() => {
     setLoadingImg(true);
-    setUrl(EMPTY_PICTURE_IMAGE);
     const { promise, cancel } = loadImage(src)
     promise.then(() => {
       setLoadingImg(false);

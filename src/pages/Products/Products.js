@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
+import { useTranslation } from 'react-i18next';
 
 import { bindActionToPromise } from 'utils/helpers'
 import { 
@@ -10,17 +11,13 @@ import {
 } from 'redux/actions'
 
 import {
-  AppBar,
   makeStyles
 } from '@material-ui/core'
-import StyledContainer from 'components/Styled/Container/Container';
-import StyledToolbar from 'components/Styled/Toolbar/Toolbar';
 import DataList from 'components/DataList/DataList';
 
 import ProductCard from './ProductCard/ProductCard'
 
 import styles from './productsStyles'
-import StyledTypography from 'components/Styled/Typography/Typography';
 
 const useStyles = makeStyles(styles,{name: 'Products'})
 
@@ -32,13 +29,15 @@ const Products = (props) => {
     productsLoading,
     fetchProducts
   } = props;
-
+  
   const [page,setPage] = React.useState(1)
-  const [pageSize,setPageSize] = React.useState(2)
+  const [pageSize] = React.useState(2)
+
+  const { i18n } = useTranslation();
 
   const classes = useStyles();
 
-  const renderItem = React.useCallback(({ item, index }) => {
+  const renderItem = React.useCallback(({ item }) => {
     return (
       <ProductCard
         className={classes.productCard}
@@ -61,14 +60,14 @@ const Products = (props) => {
 
   const gridItemProps = React.useMemo(() => ({
     xs: 12,
-    sm: 4,
+    sm: 6,
     md: 3,
   }))
 
   const fetchData = React.useCallback(({ page, pageSize }) => {
     fetchProducts({
       params: {
-        language: 'zh_HK',
+        language: i18n.language,
         product_type_id: 1,
         limit: pageSize,
         page,
@@ -77,7 +76,7 @@ const Products = (props) => {
   },[])
 
   React.useEffect(() => {
-
+    // i18n.changeLanguage('zh_HK')
   },[])
 
   return (
