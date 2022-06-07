@@ -1,0 +1,10 @@
+@import '../../../assets/styles/variables';
+
+.RangeFilter {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: ($gridSpacingX/2);
+  align-items: center;
+  justify-content: stretch;
+  text-align: center;
+}

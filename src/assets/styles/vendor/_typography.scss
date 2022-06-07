@@ -1,0 +1,19 @@
+@import '../variables';
+
+.TextPrimary {
+  color: $primaryColor !important;
+}
+.TextSecondary {
+  color: $secondaryColor !important;
+}
+.TextDanger {
+  color: $danger !important;
+}
+.TextRight {
+  text-align: right !important;
+  justify-content: flex-end;
+}
+.TextCenter {
+  text-align: center !important;
+  justify-content: center;
+}

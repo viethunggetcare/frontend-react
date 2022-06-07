@@ -1,0 +1,94 @@
+$df-fs: 16;
+$rem: 1rem;
+
+$primaryColor: #ED1C24;
+$primaryHoverColor: #CC0000;
+$primaryPressColor: #ED1C24;
+$secondaryColor: #029ae3;
+$secondaryPressColor: #0277af;
+$secondaryHoverColor: #34b3f1;
+
+$success: #12B235;
+$danger: #ED1C24;
+$warning: orange;
+
+$lightYellow: #ffd700;
+
+$white: #ffffff;
+$whiteGrey: #F0F0F0;
+$whiteGrey2: #EFF7FF;
+$blueGrey: #F7FBFF;
+$grey: #EFF7FF;
+$textColor: #333;
+$textMuted: #828D99;
+$black: #000;
+$thumbBg: #635c5c;
+$placeholder: #adadad;
+$darkBg: #575E66;
+$black333: #333;
+$sanJuan: #475666;
+
+$defaultBg: #f5f5f5;
+$infoBg: #E6F3FF;
+$warningBg: #FFE6CC;
+$dangerBg: #FFE6E6;
+$successBg: #E6FFEB;
+$infoText: #0066CC;
+$warningText: #f8d8b9;
+$dangerText: #ED1C24;
+$successText: #0E8C2A;
+
+$headerColor: $sanJuan;
+$headerBg: $white;
+$boxHeader : #1c1c1c1a;
+
+$borderColor: #A3B8CC;
+$borderSecondaryColor: #D1D1D1;
+
+$bodyBg: #ffffff;
+$secondaryBg: #EBEBEB;
+
+$fontFamilyBase: 'Open Sans', sans-serif;
+$fontSizeBase: (14/$df-fs)*$rem;
+$fontSizeLg: (16/$df-fs)*$rem;
+$fontSizeXLg: (20/$df-fs)*$rem;
+$fontSizeH1: (30/$df-fs)*$rem;
+$fontSizeH2: (28/$df-fs)*$rem;
+$fontSizeH3: (24/$df-fs)*$rem;
+$fontSizeH4: (16/$df-fs)*$rem;
+$fontSizeSm: (12/$df-fs)*$rem;
+$fontSizeXs: (10/$df-fs)*$rem;
+
+$boxShadow: 0px 8px 16px rgba(0, 0, 0, 0.08);
+$dropdownBoxShadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+
+$radiusBase: (4/$df-fs)*$rem;
+$radiusSm: (3/$df-fs)*$rem;
+$radiusXs: (2/$df-fs)*$rem;
+$radiusLg: (8/$df-fs)*$rem;
+
+$weightNormal: 400;
+$weightMedium: 500;
+$weightSemibold: 600;
+$weightBold: 700;
+
+$gridSpacingX: (16/$df-fs)*$rem;
+$gridSpacingY: (16/$df-fs)*$rem;
+
+$thumbSizeX: (84/$df-fs)*$rem;
+$thumbSizeY: (84/$df-fs)*$rem;
+$largeThumbSizeX: (136/$df-fs)*$rem;
+$largeThumbSizeY: (136/$df-fs)*$rem;
+
+$mainNavHeight: (52/$df-fs)*$rem;
+
+/* icons */
+$iconColor: #808080;
+
+/* form */
+$inputBorder: #EBEBEB;
+$inputBg: #F2F8FF;
+
+/* table */
+$theadBg: $headerBg;
+$theadColor: $white;

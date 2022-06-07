@@ -1,0 +1,39 @@
+@import '../../assets/styles/variables';
+
+.PaginationInfo,
+.PaginationWrap {
+  display: flex;
+  align-items: center;
+}
+.PaginationInfo {
+  padding-right: $gridSpacingX;
+  font-size: $fontSizeBase;
+
+  .PageSizeSelect {
+    margin: 0 (4/$df-fs)*$rem 0 (8/$df-fs)*$rem;
+
+    div[class*="MuiSelect-select"] {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    &:before {
+      border-bottom: none !important;
+    }
+  }
+}
+.PageTextFieldWrap {
+  padding-left: $gridSpacingX/2;
+  display: inline-flex;
+  align-items: center;
+
+  .PageTextField {
+    width: (60/$df-fs)*$rem;
+    margin-left: $gridSpacingX/3;
+
+    input {
+      padding: $gridSpacingX/2;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+@import '../../assets/styles/variables';
+
+.Dialog {
+  .DialogContentWrap {
+    min-width: (300 / $df-fs) * $rem;
+  }
+  .DialogTitle,
+  .DialogContent,
+  .DialogFooter {
+    padding-left: (2 * $gridSpacingY);
+    padding-right: (2 * $gridSpacingY);
+  }
+  .DialogContent {
+    padding-bottom: (2 * $gridSpacingY);
+
+    p {
+      padding-bottom: 0;
+
+      & + p {
+        padding-top: $gridSpacingY;
+      }
+    }
+  }
+  .DialogFooter {
+    padding-bottom: (2 * $gridSpacingY);
+
+    button + button {
+      margin-left: $gridSpacingX;
+    }
+  }
+
+  .DialogInfo {
+    text-align: center;
+    padding: $gridSpacingY;
+
+    p, .DialogInfoTitle, .DialogInfoIcon {
+      padding-bottom: $gridSpacingY/1.5;
+    }
+    .DialogInfoIcon {
+      color: $textMuted;
+      font-size: (40/$df-fs) * $rem;
+      padding-bottom: $gridSpacingY/2;
+    }
+    .DialogInfoTitle {
+      font-size: $fontSizeLg;
+      font-weight: $weightSemibold;
+    }
+    .DialogInfoActions {
+      padding-top: $gridSpacingY;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      button {
+        display: block;
+        min-width: (140/$df-fs) * $rem;
+
+        & + button {
+          margin-left: $gridSpacingX;
+        }
+      }
+    }
+  }
+
+  .DialogFooter, .DialogInfoActions {
+    button:only-child {
+      flex: 1 1 0;
+      flex-basis: 0;
+    }
+  }
+}

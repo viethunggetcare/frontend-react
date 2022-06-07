@@ -1,0 +1,134 @@
+@import '../../../assets/styles/variables';
+
+.Dialog {
+  fieldset {
+    display: block;
+  }
+
+//   .DialogContentWrap {
+//     width: (600/$df-fs)*$rem;
+//     max-width: 600px;
+//   }
+//   .DialogContent {
+//     padding-top: 0 !important;
+//     padding: 4px;
+//   }
+//   .DialogActions {
+//     padding-bottom: $gridSpacingY*1.5;
+//     padding-left: 24px;
+//     padding-right: 24px;
+
+//     button + button {
+//       margin-left: $gridSpacingX;
+//     }
+//   }
+//   .RadioGroup {
+//     .FormControlLabel {
+//       margin-left: 0;
+//       & + .FormControlLabel {
+//         padding-top: $gridSpacingY/2;
+//       }
+//     }
+//     .RadioGroup {
+//       .FormControlLabel {
+//         padding-left: $gridSpacingX*2;
+//         color: $textMuted;
+//       }
+//     }
+//   }
+}
+// .FieldGroup {
+//   display: grid;
+//   grid-template-columns: 1fr;
+
+//   &.ProviderGroup {
+//     .FieldControl {
+//       padding-top: $gridSpacingY;
+//       padding-bottom: $gridSpacingY/2;
+//       > label {
+//         color: $secondaryColor;
+//       }
+//     }
+//   }
+// }
+
+// .FieldControl {
+//   display: grid;
+//   grid-template-columns: auto 1fr;
+//   column-gap: $gridSpacingX/2;
+//   align-items: center;
+//   width: 100%;
+//   padding-bottom: $gridSpacingY;
+
+//   > label {
+//     width: (180/$df-fs)*$rem;
+
+//     &.Flex {
+//       display: flex;
+//       align-items: center;
+//     }
+//     .TextNote {
+//       color: $textMuted;
+//     }
+//   }
+//   .Valid {
+//     input {
+//       color: $success;
+//     }
+//   }
+//   .InValid {
+//     input {
+//       color: $danger;
+//     }
+//   }
+//   .RadioGroup {
+//     display: flex;
+//     flex-wrap: nowrap;
+//     flex-direction: row;
+//   }
+//   .FieldGroupSize {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr;
+//     column-gap: $gridSpacingX*1.5;
+//   }
+//   .HelperText {
+//     font-size: $fontSizeSm;
+//     padding-top: (4/$df-fs)*$rem;
+//     display: block;
+//   }
+// }
+// .WarningIcon {
+//   color: $warning;
+//   margin-left: (4/$df-fs)*$rem;
+// }
+// .DeliveryDetailsForm {
+//   padding-top: $gridSpacingY;
+//   margin-top: $gridSpacingY;
+//   border-top: 1px solid $grey;
+// }
+
+// @media screen and (min-width: 1280px) {
+//   .FieldGroup {
+//     grid-template-columns: 1fr 1fr;
+//     column-gap: $gridSpacingX*1.5;
+
+//     .FieldControl + .FieldControl {
+//       > label {
+//         width: auto;
+//       }
+//     }
+
+//     &.FieldGroupWeight {
+//       grid-template-columns: 2fr 1fr 1fr 1fr;
+//     }
+//   }
+// }
+// .FieldLabel {
+//   display: flex;
+//   align-items: center;
+//   gap: .25rem;
+//   .LabelIcon {
+//     font-size: 1.25rem;
+//     cursor: pointer;
+//   }
+// }

@@ -1,0 +1,33 @@
+@import '../variables';
+
+.StatusLabel {
+  display: inline-flex;
+  margin-top: (2/$df-fs)*$rem;
+  margin-bottom: (2/$df-fs)*$rem;
+  font-size: (13/$df-fs)*$rem;
+  font-weight: $weightNormal;
+  border-radius: 999px;
+  color: $textColor;
+  padding: (3/$df-fs)*$rem (12/$df-fs)*$rem (5/$df-fs)*$rem;
+  background-color: $defaultBg;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  &.Info {
+    background-color: #0080FF;
+    color: #CCE6FF;
+  }
+  &.Danger {
+    background-color: $dangerBg;
+    color: $dangerText;
+  }
+  &.Warning {
+    background-color: #FF7F00;
+    color: #FFE6CC;
+  }
+  &.Success {
+    background-color: #12B335;
+    color: #CCFFD7;
+  }
+}

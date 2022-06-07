@@ -1,0 +1,44 @@
+@import '../../variables';
+
+.Toastify {
+  &__toast {
+    color: $textColor;
+
+    &-body {
+      font-size: $fontSizeBase;
+    }
+
+    &--success {
+      background: $white;
+      color: $textColor;
+
+      .Toastify__toast-body {
+        // color: $success;
+        color: $white;
+      }
+    }
+    &--warning {
+      background: $white;
+      color: $textColor;
+
+      .Toastify__toast-body {
+        // color: $warning;
+        color: $white;
+      }
+    }
+    &--error {
+      background: $white;
+      color: $danger;
+
+      .Toastify__toast-body {
+        // color: $danger;
+        color: $white;
+      }
+    }
+  }
+  &__close {
+    &-button {
+      color: $textColor;
+    }
+  }
+}

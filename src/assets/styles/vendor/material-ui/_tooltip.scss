@@ -1,0 +1,13 @@
+@import '../../variables';
+
+.MuiTooltip-popper {
+  .MuiTooltip-tooltip {
+    font-size: $fontSizeBase;
+    font-family: $fontFamilyBase;
+    padding: $gridSpacingY/1.5 $gridSpacingX;
+    background-color: $black333;
+  }
+  .MuiTooltip-arrow {
+    color: $black333;
+  }
+}

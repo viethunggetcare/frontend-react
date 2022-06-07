@@ -1,0 +1,20 @@
+@import '../../variables';
+
+.MuiTabs-root {
+  min-height: 0;
+
+  .MuiTab {
+    &-root {
+      font-family: $fontFamilyBase;
+      font-weight: $weightSemibold;
+      font-size: $fontSizeBase;
+      text-transform: uppercase;
+      padding-left: 0;
+      padding-right: 0;
+      letter-spacing: 0;
+      margin-right: (2 * $gridSpacingX);
+      min-width: 0;
+      max-width: none;
+    }
+  }
+}

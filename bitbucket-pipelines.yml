@@ -1,0 +1,10 @@
+image: python:3.8
+
+pipelines:
+  branches:
+    master:
+      - parallel:
+        - step:
+            name: Merge subtree into main repo
+            script:
+              - curl --user $jenkins1_user:$jenkins1_api_token --request GET $jenkins1_endpoint

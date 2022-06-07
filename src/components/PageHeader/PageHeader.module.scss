@@ -1,0 +1,177 @@
+@import '../../assets/styles/variables';
+
+.Header {
+  font-weight: 600;
+  box-shadow: -4px 4px 5px 0px $boxHeader;
+  border-bottom: 1px solid transparent;
+  height: $mainNavHeight;
+  padding: 0 $gridSpacingX;
+  display: flex;
+  justify-content: space-between;
+  color: $headerColor;
+  background-color: $headerBg;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
+.Brand {
+  height: 82%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: (20/$df-fs)*$rem;
+  margin-left: (24/$df-fs)*$rem;
+
+  > img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+  }
+
+  &, &:link {
+    color: $sanJuan;
+  }
+  &:hover {
+    color: $sanJuan;
+  }
+}
+.HeaderNav {
+  flex: 1 1 0;
+  flex-basis: 0;
+  align-self: stretch;
+  margin: 0 (36/$df-fs)*$rem;
+  display: flex;
+  align-items: stretch;
+
+  > ul {
+    display: flex;
+    align-items: stretch;
+  }
+  > ul > li {
+    display: flex;
+    align-items: stretch;
+    position: relative;
+
+    > ul {
+      z-index: 9;
+      position: absolute;
+      width: auto;
+      height: auto;
+      min-width: (200/$df-fs)*$rem;
+      top: $mainNavHeight;
+      left: 0;
+      max-height: 0;
+      background-color: $white;
+      transition: max-height 0.3s ease-out;
+      border-bottom-left-radius: (4/$df-fs)*$rem;
+      border-bottom-right-radius: (4/$df-fs)*$rem;
+      overflow: hidden;
+      box-shadow: $dropdownBoxShadow;
+
+      li {
+        white-space: nowrap;
+
+        &:last-child {
+          padding-bottom: (4/$df-fs)*$rem;
+        }
+      }
+      a {
+        &, &:link {
+          color: $textColor;
+          font-weight: $weightMedium;
+        }
+        &:not([disabled]):hover {
+          color: $textColor;
+          background-color: $grey;
+        }
+        &.Active {
+          color: $textColor;
+          background-color: $whiteGrey2;
+        }
+        &[disabled] {
+          color: $textMuted;
+          cursor: default;
+          pointer-events: none;
+        }
+      }
+    }
+
+    a {
+      padding: (8/$df-fs)*$rem (12/$df-fs)*$rem;
+      display: block;
+
+      &, &:link {
+        color: $sanJuan;
+      }
+      &:hover {
+        color: $sanJuan;
+      }
+      &.Active {
+        color: $sanJuan;
+      }
+    }
+
+    > a {
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      &:after {
+        content: " ";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: (4/$df-fs)*$rem;
+        background-color: transparent;
+        border-top-left-radius: (4/$df-fs)*$rem;
+        border-top-right-radius: (4/$df-fs)*$rem;
+      }
+
+      &:hover {
+        &:after {
+          background-color: $white;
+        }
+      }
+
+      &.Active {
+        &:after {
+          background-color: $sanJuan;
+        }
+        &:hover {
+          &:after {
+            background-color: $sanJuan;
+          }
+        }
+      }
+
+      &[disabled] {
+        cursor: pointer;
+        pointer-events: none;
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+      > ul {
+        max-height: (500/$df-fs)*$rem;
+      }
+      > a {
+        &:after {
+          background-color: $white;
+        }
+      }
+    }
+  }
+}
+.RightNav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  > li + li {
+    padding-left: (32/$df-fs)*$rem;
+  }
+}

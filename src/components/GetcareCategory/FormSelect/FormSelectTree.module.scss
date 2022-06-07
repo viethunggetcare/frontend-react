@@ -1,0 +1,59 @@
+@import '../../../assets/styles/variables';
+
+.FieldControl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: $gridSpacingX/2;
+  align-items: center;
+  width: 100%;
+  padding-bottom: $gridSpacingY;
+
+  > label {
+    width: (180/$df-fs)*$rem;
+
+    &.Flex {
+      display: flex;
+      align-items: center;
+    }
+    .TextNote {
+      color: $textMuted;
+    }
+  }
+  .Valid {
+    input {
+      color: $success;
+    }
+  }
+  .InValid {
+    input {
+      color: $danger;
+    }
+  }
+  .RadioGroup {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+  .FieldGroupSize {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: $gridSpacingX*1.5;
+  }
+  .HelperText {
+    font-size: $fontSizeSm;
+    padding-top: (4/$df-fs)*$rem;
+    display: block;
+  }
+}
+
+.CategoryRenderOption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  span {
+      color: $success;
+      font-size: 1rem;
+      font-weight: 600;
+  }
+}

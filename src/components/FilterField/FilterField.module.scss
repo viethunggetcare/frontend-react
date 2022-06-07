@@ -1,0 +1,31 @@
+@import '../../assets/styles/variables';
+
+.FieldWrap {
+  padding-top: $gridSpacingY;
+
+  .FormControl {
+    display: flex;
+    align-items: flex-start;
+    margin-right: 0;
+
+    .Checkbox {
+      padding: 0 ($gridSpacingX/2) 0 ($gridSpacingX/2);
+    }
+  }
+  .FieldInput {
+    width: 100%;
+  }
+
+  .FormGroup {
+    padding-left: (16/$df-fs)*$rem;
+
+    label, span {
+      color: $textMuted;
+      font-size: $fontSizeBase;
+    }
+
+    &.CheckboxGroup {
+      margin-bottom: -9px;
+    }
+  }
+}

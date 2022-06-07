@@ -1,0 +1,15 @@
+@import '../../assets/styles/variables';
+
+.HeaderColItem {
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-start;
+
+  &.Sortable {
+    cursor: pointer;
+  }
+  .SortIcon {
+    color: $borderColor;
+    margin-left: (-6/$df-fs)*$rem;
+  }
+}
